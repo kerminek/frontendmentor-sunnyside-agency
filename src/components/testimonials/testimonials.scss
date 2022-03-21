@@ -1,0 +1,96 @@
+$darkGray: hsl(213, 9%, 39%);
+$darkBlue: hsl(212, 27%, 19%);
+$lightGray: hsl(210, 4%, 67%);
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // height: 80vh;
+  // min-height: 40rem;
+  min-height: 80vh;
+
+  padding: 5rem 0;
+  gap: 5rem;
+
+  h3 {
+    font-family: "Fraunces", serif;
+    color: $lightGray;
+    letter-spacing: 8px;
+    font-weight: 900;
+  }
+
+  .testimonialsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    gap: 2rem;
+
+    .testimonial {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+
+      gap: 4rem;
+      text-align: center;
+
+      font-family: "Barlow", sans-serif;
+
+      .imageContainer {
+        height: 60px;
+        width: 60px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+      .textContainer {
+        max-width: 20rem;
+        font-size: 18px;
+        line-height: 30px;
+        p {
+          color: $darkGray;
+        }
+      }
+      .nameAndTitle {
+        span {
+          font-family: "Fraunces", serif;
+          color: $darkBlue;
+        }
+        p {
+          margin-top: 1rem;
+          color: $lightGray;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .testimonials {
+    gap: 4rem;
+    h3 {
+      font-size: 18px;
+      letter-spacing: 4px;
+    }
+
+    .testimonialsContainer {
+      flex-direction: column;
+      width: 90%;
+      gap: 4rem;
+
+      .testimonial {
+        gap: 2rem;
+      }
+    }
+  }
+}

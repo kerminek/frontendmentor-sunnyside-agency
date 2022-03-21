@@ -1,0 +1,46 @@
+$white: hsl(0, 0%, 100%);
+
+.hello {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+
+  gap: 5rem;
+
+  padding-top: 18rem;
+  text-align: center;
+
+  h1 {
+    font-size: 72px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    letter-spacing: 10px;
+    color: $white;
+  }
+
+  img {
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hello {
+    padding-top: 10rem;
+    gap: 3.7rem;
+    h1 {
+      font-size: 38px;
+    }
+    img {
+      height: 8rem;
+    }
+  }
+}

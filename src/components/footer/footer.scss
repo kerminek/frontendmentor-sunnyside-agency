@@ -1,0 +1,57 @@
+$mediumCyan: hsl(168, 34%, 41%);
+$darkCyan: hsl(167, 40%, 24%);
+
+.footer {
+  height: 45vh;
+  min-height: 20rem;
+  background-color: #8bd3c5;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    transform: scale(1.5);
+
+    path {
+      fill: $darkCyan;
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 3rem;
+
+    margin: 3rem 0 5rem;
+
+    font-family: "Barlow", sans-serif;
+    color: $mediumCyan;
+    font-size: 20px;
+
+    .link {
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .socialMedias {
+    display: flex;
+    gap: 2rem;
+
+    svg {
+      cursor: pointer;
+
+      &:hover > path {
+        fill: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer {
+  }
+}
